@@ -2,4 +2,4 @@
 
 This is the last step before you have earned your birthday present.
 
-Test test
+To open the website, follow these instructions:
