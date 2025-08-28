@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", init);
 
-const pwd = "Test123"
+const correctPwdEncrypted = [84, 101, 115, 116, 49, 50, 51, 55357, 56473];
 
 function init() {
     document.querySelector("form").addEventListener("submit", tryPassword);
@@ -14,9 +14,22 @@ function tryPassword(e) {
 }
 
 function checkPassword(guessedPassword) {
-    if (guessedPassword === pwd) {
+    if (pwdIsCorrect(guessedPassword)) {
         console.log("Correct");
     } else {
         console.log("Incorrect");
     }
+}
+
+function pwdIsCorrect(guessedPassword) {
+    const guessedPwdEncrypted = encrypt(guessedPassword);
+    if (guessedPwdEncrypted.length !== correctPwdEncrypted.length) {
+        return false;
+    }
+    for (const i in guessedPwdEncrypted) {
+        if (guessedPwdEncrypted[i] !== correctPwdEncrypted[i]) {
+            return false;
+        }
+    }
+    return true;
 }
