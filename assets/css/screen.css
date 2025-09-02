@@ -42,3 +42,7 @@ button {
     width: 6em;
     background-color: rgb(255,255,255,0.75);
 }
+
+.pink {
+    background-color: hotpink;
+}
