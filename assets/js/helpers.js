@@ -6,3 +6,15 @@ function encrypt(str) {
     }
     return arr;
 }
+
+function pwdIsCorrect(guessedPwdEncrypted) {
+    if (guessedPwdEncrypted.length !== correctPwdEncrypted.length) {
+        return false;
+    }
+    for (const i in guessedPwdEncrypted) {
+        if (guessedPwdEncrypted[i] !== correctPwdEncrypted[i]) {
+            return false;
+        }
+    }
+    return true;
+}
