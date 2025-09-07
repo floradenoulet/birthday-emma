@@ -9,7 +9,7 @@ const messages = [
   "Da kon beter, ma zeker nie slecht",
   "Wel, gebt et geraden, das iets",
   "Ik ad wel beter van jou verwacht, hoor Emma"
-]
+];
 
 
 export { correctPwdEncrypted, messages };

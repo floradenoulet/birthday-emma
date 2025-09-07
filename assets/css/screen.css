@@ -53,7 +53,6 @@ form {
     border-radius: 1em;
     padding: 1em;
     border: 5px solid var(--periwinkle);
-    margin: 4.5em 0;
 }
 
 form > * {
@@ -61,7 +60,7 @@ form > * {
     display: block;
 }
 
-label, p {
+label, p, a {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1em;
     text-align: center;
@@ -75,7 +74,7 @@ input, button {
 }
 
 input {
-    padding: 0.25rem;
+    padding: 0.25rem 1rem;
     margin-bottom: 1rem;
     width: 100%;
 }
@@ -88,11 +87,21 @@ button {
     color: white;
 }
 
+a {
+    color: var(--periwinkle);
+    text-align: left;
+}
+
 p {
     font-family: Arial, sans-serif;
-    margin-bottom: 2.5em;
+    margin: 2.5em 0;
     font-size: 4rem;
     font-weight: 500;
+}
+
+p#hint {
+    text-align: left;
+    font-size: 2.5rem;
 }
 
 span {

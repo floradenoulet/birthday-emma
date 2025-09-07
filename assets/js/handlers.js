@@ -17,8 +17,14 @@ function checkPassword(guessedPassword) {
         renderGuessed();
     } else {
         console.log("Incorrect");
+        document.querySelector("a#forgotten").classList.remove("hidden");
     }
 }
 
+function showHint(e) {
+    e.preventDefault();
+    document.querySelector("#hint").classList.remove("hidden");
+}
 
-export { tryPassword };
+
+export { tryPassword, showHint };
