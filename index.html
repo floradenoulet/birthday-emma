@@ -9,21 +9,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="blue20.png">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/screen.css">
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/handlers.js"></script>
-    <script src="assets/js/helpers.js"></script>
-    <script src="assets/js/storage.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
 </head>
 <body>
-    <div id="home" class="hidden">
+    <div id="home">
         <h1>Happy birthday, Emma!!</h1>
-        <form mehtod="get">
+        <form method="get">
             <label for="pwd">Please enter the password</label>
             <input id="pwd" type="text">
             <button type="submit">Submit</button>
         </form>
     </div>
-    <div id="guessed">
+    <div id="guessed" class="hidden">
         <h2>Proficiat!</h2>
         <p>You have given the right password in <span id="amount">0</span> guesses.</p>
         <p id="message">De kan nie, das letterlijk nie mogelijk.</p>

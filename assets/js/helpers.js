@@ -1,4 +1,7 @@
 
+import { correctPwdEncrypted } from "./data.js";
+
+
 function encrypt(str) {
     const arr = new Array(str.length);
     for (const i in str) {
@@ -18,3 +21,6 @@ function pwdIsCorrect(guessedPwdEncrypted) {
     }
     return true;
 }
+
+
+export { pwdIsCorrect, encrypt };

@@ -1,4 +1,8 @@
 
+import { addGuess } from "./storage.js";
+import { pwdIsCorrect, encrypt } from "./helpers.js";
+
+
 function tryPassword(e) {
     e.preventDefault();
     addGuess();
@@ -12,3 +16,6 @@ function checkPassword(guessedPassword) {
         console.log("Incorrect");
     }
 }
+
+
+export { tryPassword };

@@ -15,3 +15,6 @@ function getGuesses() {
 function resetGuesses() {
     localStorage.removeItem("Guesses");
 }
+
+
+export { addGuess };
