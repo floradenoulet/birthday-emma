@@ -1,7 +1,4 @@
 
-import { correctPwdEncrypted } from "./data.js";
-
-
 function encrypt(str) {
     const arr = new Array(str.length);
     for (const i in str) {
@@ -10,7 +7,7 @@ function encrypt(str) {
     return arr;
 }
 
-function pwdIsCorrect(guessedPwdEncrypted) {
+function pwdIsCorrect(guessedPwdEncrypted, correctPwdEncrypted) {
     if (guessedPwdEncrypted.length !== correctPwdEncrypted.length) {
         return false;
     }
@@ -22,5 +19,13 @@ function pwdIsCorrect(guessedPwdEncrypted) {
     return true;
 }
 
+function getMessage(messages, index) {
+    if (index < messages.length) {
+        return messages[index];
+    } else {
+        return messages[messages.length - 1];
+    }
+}
 
-export { pwdIsCorrect, encrypt };
+
+export { pwdIsCorrect, encrypt, getMessage };

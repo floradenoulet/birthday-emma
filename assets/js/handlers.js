@@ -1,6 +1,8 @@
 
 import { addGuess } from "./storage.js";
 import { pwdIsCorrect, encrypt } from "./helpers.js";
+import { renderGuessed } from "./renderer.js";
+import { correctPwdEncrypted } from "./data.js";
 
 
 function tryPassword(e) {
@@ -10,8 +12,9 @@ function tryPassword(e) {
 }
 
 function checkPassword(guessedPassword) {
-    if (pwdIsCorrect(encrypt(guessedPassword))) {
+    if (pwdIsCorrect(encrypt(guessedPassword), correctPwdEncrypted)) {
         console.log("Correct");
+        renderGuessed();
     } else {
         console.log("Incorrect");
     }

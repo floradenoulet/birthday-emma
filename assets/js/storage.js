@@ -17,4 +17,4 @@ function resetGuesses() {
 }
 
 
-export { addGuess };
+export { addGuess, getGuesses, resetGuesses };
