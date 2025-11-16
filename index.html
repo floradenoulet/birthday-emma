@@ -16,11 +16,13 @@
         <h1>Happy birthday, Emma!!</h1>
         <form method="get">
             <label for="pwd">Gelieve het wachtwoord in te vullen.</label>
-            <input id="pwd" type="password">
-            <a id="forgotten" class="hidden" href="#">Paswoord vergeten</a>
+            <input id="pwd" type="password" name="pwd">
+            <div id="hint">
+                <a id="forgotten" class="hidden" href="#">Paswoord vergeten</a>
+                <p class="hidden">Weet je nog jaren geleden, toen Emma nog in Brugge studeerde en Flora in Gent?</p>
+            </div>
             <button type="submit">Submit</button>
         </form>
-        <p id="hint" class="hidden">Weetje nog jaren geleden, toen Emma nog in Brugge studeerde en Flora in Gent?</p>
     </div>
     <div id="guessed" class="hidden">
         <h2>Proficiat!</h2>
