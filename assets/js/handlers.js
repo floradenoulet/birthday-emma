@@ -24,6 +24,7 @@ function checkPassword($inputField) {
 function showHint(e) {
     e.preventDefault();
     document.querySelector("div#hint p").classList.remove("hidden");
+    document.querySelector("a#forgotten").classList.add("hidden")
 }
 
 
