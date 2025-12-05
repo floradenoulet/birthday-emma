@@ -14,8 +14,8 @@ function tryPassword(e) {
 function checkPassword($inputField) {
     if (pwdIsCorrect(encrypt($inputField.value), correctPwdEncrypted)) {
         renderGuessed();
-    } else if(getGuesses() > 2) {
-        document.querySelector("a#forgotten").classList.remove("hidden");
+    } else if (getGuesses() >= 2) {
+        document.querySelector("div#hint").classList.remove("hidden");
     }
     $inputField.value = "";
     $inputField.focus();
@@ -23,7 +23,7 @@ function checkPassword($inputField) {
 
 function showHint(e) {
     e.preventDefault();
-    document.querySelector("#hint").classList.remove("hidden");
+    document.querySelector("div#hint p").classList.remove("hidden");
 }
 
 
