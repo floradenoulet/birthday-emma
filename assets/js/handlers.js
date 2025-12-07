@@ -27,5 +27,13 @@ function showHint(e) {
     document.querySelector("a#forgotten").classList.add("hidden")
 }
 
+function goToEnd(e) {
+    e.preventDefault();
+    document.querySelectorAll(".page").forEach(el => {
+        el.classList.add("hidden");
+    })
+    document.querySelector(".page#end").classList.remove("hidden");
+}
 
-export { tryPassword, showHint };
+
+export { tryPassword, showHint, goToEnd };
