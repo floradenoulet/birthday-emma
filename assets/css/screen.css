@@ -41,7 +41,7 @@ h2 {
     color: var(--dark-rose);
 }
 
-#home, #guessed {
+.page {
     height: 100%;
     padding: 1em;
     background: rgb(255, 255, 255, 0.6);
@@ -68,24 +68,35 @@ label, p, #hint {
     margin-bottom: 3rem;
 }
 
-input, button {
+input {
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 1em;
     font-size: 1em;
-}
-
-input {
     padding: 0.25rem 1rem;
     margin-bottom: 1rem;
     width: 100%;
 }
 
-button {
-    width: 6em;
+
+
+#home button {
     background-color: var(--dark-rose);
     border: none;
-    padding: 0.3em;
+    padding: 1rem 5rem;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1em;
+    font-size: 1em;
+}
+
+#guessed a {
+    background-color: var(--lavender);
+    padding: 1rem 5rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1em;
+    border: 0.25rem solid var(--periwinkle);
+    font-size: 1em;
 }
 
 #hint {
@@ -115,6 +126,23 @@ p {
 span {
     color: var(--periwinkle);
     font-weight: 600;
+}
+
+#end {
+    h2 {
+        color: var(--light-turquoise);
+        margin-bottom: 0;
+    }
+
+    p {
+        margin: 4rem 0;
+        font-size: 4rem;
+    }
+
+    p.smaller {
+        margin: 10rem 0;
+        font-size: 3rem;
+    }
 }
 
 
